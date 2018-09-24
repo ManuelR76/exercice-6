@@ -1,62 +1,37 @@
-#vert {
-  height:50px;
-  width:80%;
-  background-color:#2ecc71;
-  float:left;
-}
+body{ color: white; font-family: sans-serif; font-size: 1.4em; }
+#flex1Ligne1{ background-color: #00C843; width: 70%; height: 20px; }
+#flex2Ligne1{ background-color: #007FC8; width: 30%; height: 20px; }
 
-#bleu {
-  height:50px;
-  width:20%;
-  background-color:#2980b9;
-  display:inline;
-  float:right;
-}
+#flex1Ligne2{ background-color: #EF2424; width: 34%; height: 50px; }
+#flex2Ligne2{ background-color: #F67A0E; width: 33%; height: 50px; }
+#flex3Ligne2{ background-color: #C7C0BA; width: 33%; height: 50px; }
 
-#rouge {
-  height:150px;
-  width:33.33%;
-  background-color:#e74c3c;
-  float:left;
-}
+#flex1Ligne3{ background-color: #EF2424; width: 34%; height: 50px; }
+#flex2Ligne3{ background-color: #EABC22; width: 22%; height: 50px; }
+#flex3Ligne3{ background-color: #51DB9F; width: 22%; height: 50px; }
+#flex4Ligne3{ background-color: #FE7700; width: 22%; height: 50px; }
 
-#gris {
-  height:75px;
-  width:33.33%;
-  background-color:#95a5a6;
-  float:right;
-}
+#flex1Ligne4{ background-color: #030E57; width: 100%; height: 100px; }
 
-#orange {
-  height:75px;
-  width:33.34%;
-  background-color:#e67e22;
-  overflow:hidden;
-}
+/*Displaying items in a row*/
+.flexcontainer {
+   /* background-color: #E0E0E0;
+   padding: 20px; */
 
-#orangefonce {
-  height:75px;
-  width:22.22%;
-  background-color:#d35400;
-  float:right;
-}
+   display: -webkit-flex; /*Setting the container to flex*/
+   display: flex;
 
-#jaune {
-  height:75px;
-  width:22.22%;
-  background-color:#f39c12;
-  float:left;
-}
+   -webkit-flex-direction: row; /*Items inside the container into a row*/
+   flex-direction: row;
 
-#cyan {
-  height:75px;
-  width:22.22%;
-  background-color:#16a085;
-  overflow:hidden;
-}
+   -webkit-align-items: center;  /*Center everything up */
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
 
-#bleufonce {
-  height:200px;
-  width:100%;
-  background-color:#2c3e50;
+   /*Aligns the items to the right/end of the container
+    -webkit-justify-content: flex-end;
+   justify-content: flex-end;
+  */
+
 }
